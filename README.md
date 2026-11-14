@@ -32,4 +32,19 @@ npm run build
 npm run lint
 ```
 
+## Deploy to Vercel
+
+This project uses Vite. In the Vercel project settings, use:
+
+| Setting | Value |
+| --- | --- |
+| Framework Preset | Vite |
+| Root Directory | `./` |
+| Build Command | `npm run build` |
+| Output Directory | `dist` |
+| Install Command | `npm ci` |
+| Environment Variables | None required |
+
+These settings are also recorded in `vercel.json`. Make sure the Vercel project is connected to the repository root containing `package.json`.
+
 Login, cart checkout, and service booking currently demonstrate front-end interactions only; they are not connected to authentication, payment, or booking APIs.
